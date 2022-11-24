@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+</head>
+<body>
+    <!-- just click (!) para ma-set up lahat before you can start (boiler plate) -->
+    <!-- lang="en" used for translatation of languange -->
+
+    <!-- id is unique only for something na para lang doon (pag href or link sa id is #(name ng id)) Hahanapin niya kung saan 'yong word na 'yon -->
+    <h1 id="header">Header</h1>
+    <a href="#footer">Go to the footer.</a>
+    <br /> <br /> <!-- line break -->
+
+    <!-- (./= same folder ng file) (../=kung nasaan ang file sa labas) -->
+    <!-- Text Link -->
+    <a href="./sample html.html" target="_blank">My First HTML Page</a>
+    <br /> <br />
+    <a href="https://www.facebook.com/BLACKPINKOFFICIAL" target="_blank">BLACKPINK</a>
+
+    <br /> <br />
+
+    <!-- Image Link -->
+    <a href="https://www.youtube.com/watch?v=gQlMMD8auMs" target="_blank">
+        <img 
+            src="https://i.imgur.com/vF901ZA.gif" 
+            alt="Blackpink GIF"
+        >
+    </a>
+
+    <br /> <br />
+
+    <!-- Email Link -->
+    <a href="mailto:soraidagabriel45@gmail.com">Email me!</a>
+    <br />
+
+    <!-- Phone Link -->
+    <a href="tel:063-229-3128">Contact me!</a>
+    <br />
+
+    <!-- height something para ma-scroll down style for height spacing -->
+    <p style="height:1000px"></p>
+
+    <h2 id="footer">Footer</h2>
+
+    <!-- Link to same page -->
+    <a href="#header">Go to the header.</a>
+    <br />
+
+
+    <!-- Text formatting -->
+    <p>
+        <strong>This text is important! This is accessable</strong>
+    </p>
+
+    <!-- not recommended only for ccs <b> -->
+    <p>
+        <b>This text is bold!</b>
+    </p>
+
+    <p>
+        <em>This is emphasized. This is accessable.</em>
+    </p>
+
+    <p>
+        <i>This text is italic. This is not. Set an icon.</i>
+    </p>
+
+    <!-- exponential something -->
+    <p>
+        This is <sup>superscripted</sup> text.
+    </p>
+
+    <!-- exponential something - sa baba -->
+    <p>
+        This is <sub>subscripted</sub> text.
+    </p>
+
+    <!-- not recommended gamitin. Nasa css na -->
+    <p>
+        This is <u>underlined</u> text.
+    </p>
+
+    <p>
+        This text is <del>deleted</del> text.
+    </p>
+
+    <!-- Embed yt/ifram -->
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/POe9SOEKotk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        >
+    </iframe>
+
+    <br /><br />
+
+    <!-- embed for own webpage or file -->
+    <iframe src="./sample1_first_html_page.html"
+    frameborder="0"
+    width="1000"
+    height="1000"
+    >Not supported by your browser
+    </iframe>
+
+    <br /> <br />
+
+    <!-- HTML Table Tags -->
+        <!-- Parent tags for <table>/ Dito ilalagay lahat ang ilalagay sa table -->
+        <!-- Attributes for the table -->
+            <!-- border, cellpadding (space sulod sa data and cell borders) cellspacing (space between cells or the box sa cell)-->
+    <table 
+        border="1" 
+        cellpadding="5" 
+        cellspacing="0"
+        > 
+        <!-- Row ang next -->
+        <!-- Table Header -->
+        <tr align="center"> 
+            <th bgcolor="powderblue">First Name</th> 
+            <th bgcolor="lightblue">Last Name</th>
+            <th bgcolor="skyblue">Grades</th>
+        </tr>
+
+        <!-- Table Data -->
+        <tr align="center">
+            <td>Soraida</td> 
+            <td>Gabriel</td>
+            <td>99.99</td>
+        </tr>
+
+        <tr align="center">
+            <td>Sorhana</td>
+            <td>Gabriel</td>
+            <td>99.99</td>
+        </tr>
+
+        <tr align="center">
+            <td>Soraya</td>
+            <td>Gabriel</td>
+            <td>99.99</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!-- colspan kung ilan masasakop niya sa table if babaguhin / pagilig ang pagsakop ng cell -->
+     <table 
+        border="1" 
+        cellpadding="5" 
+        cellspacing="0"
+        > 
+  
+        <tr align="center"> 
+            <th colspan="2" bgcolor="powderblue">Full Name</th> 
+            <th bgcolor="skyblue">Grades</th>
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">Soraida Gabriel</td>
+            <td rowspan="3">99.99</td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">Sorhana Gabriel</td>
+        </tr>
+
+        <tr align="center">
+            <td colspan="2">Soraya Gabriel</td>
+        </tr>
+    </table>
+ 
+    <br />
+
+    <!-- rowspan pababa ang pagsakop -->
+    <table 
+        border="1" 
+        cellpadding="7" 
+        cellspacing="1"
+        >
+        <tr align="center">
+            <th>First Name</th>
+            <th>Subject</th>
+            <th>Grades</th>
+        </tr>
+
+        <tr align="center">
+            <td rowspan="3">Soraida Gabriel</td>
+            <td>Science</td>
+            <td rowspan="3">99.99</td>
+        </tr>
+
+        <tr align="center">
+            <td>Math</td>
+        </tr>
+
+        <tr align="center">
+            <td>English</td>
+        </tr>
+     </table>
+
+     <br />
+
+     <table 
+        border="1" 
+        cellpadding="5" 
+        cellspacing="1"
+        > 
+        <!-- td*4 for easy code or any code basta ilan needed-->
+
+        <tr align="center">
+            <th>Item</th>
+            <th>Qty.</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+        </tr>
+
+        <tr align="center">
+            <td>Cardboard</td>
+            <td>10</td>
+            <td>5.00</td>
+            <td>50.00</td>
+        </tr>
+
+        <tr align="center"> 
+            <td>Paper</td>
+            <td>20</td>
+            <td>1.00</td>
+            <td>20.00</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" align="center">Total</td>
+            <td align="center">70.00</td>
+        </tr>
+
+     </table>
+
+     <br />
+
+     <table 
+        border="1"
+        cellpadding="5"
+        cellspacing="1">
+
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Bob</th>
+            <th>Alice</th>
+        </tr>
+
+        <tr align="center">
+            <th rowspan="2">Favorite</th>
+            <th>Color</th>
+            <th>Blue</th>
+            <th>Purple</th>
+        </tr>
+
+        <tr align="center">
+            <th>Ice Cream Flavor</th>
+            <td>Vanilla</td>
+            <td>Chocolate</td>
+        </tr>
+
+     </table>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+</body>
+</html>

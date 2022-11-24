@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <form>
+        <!--Part 6. A. Input Text -->
+        <table 
+            border="1"
+            align="center"
+            cellpadding="5"
+            cellspacing="3"
+        >
+            <tr>
+                <th colspan="15">
+                    <h1>REGISTRATION FORM</h1>
+                </th>
+            </tr>
+
+            <tr>
+                <th 
+                    colspan="9" 
+                    align="left"
+                    style="background-color:rgb(109, 102, 102)"
+                ><em><font color="white">I. PERSONAL INFORMATION</font color></em></th>
+            </tr>
+
+            <tr>
+                <td style="background-color:rgb(221, 214, 214)">
+                    <label for="firstName">FIRST NAME: </label>
+                </td>
+                 <td colspan="7">
+                        <input 
+                        type="text" 
+                        name="firstName" id="firstName" 
+                        style="width: 99%;"
+                        placeholder="e.g. JENNIE RUBY"
+                        />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="background-color:rgb(221, 214, 214)">
+                    <label for="middleName">MIDDLE NAME: </label>
+                </td>
+                <td>
+                    <input 
+                    type="text" 
+                    name="middleName" 
+                    id="middleName"
+                    style="width: 98%;"
+                    placeholder="e.g. KIM"
+                    >
+                </td>
+
+                <td style="background-color:rgb(221, 214, 214)">
+                    <label for="nameExtension">NAME EXTENSION: </label>
+                </td>
+                <td>
+                    <input 
+                    type="text" 
+                    name="nameExtension" 
+                    id="nameExtension" 
+                    placeholder="e.g. JR., SR., I">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="background-color:rgb(221, 214, 214)">
+                    <label for="lastName">LAST NAME: </label>
+                </td>
+                 <td colspan="7">
+                        <input 
+                        type="text" 
+                        name="lastName" 
+                        id="lastName" 
+                        style="width: 99%;"
+                        placeholder="e.g. MANOBAN"
+                        />
+                </td>
+            </tr>
+
+        <!--Part 6. B. Textarea -->
+            <tr>
+                <td style="background-color:rgb(221, 214, 214)">
+                    <label for="address">ADDRESS:</label>
+                </td>
+                <td colspan="15">
+                    <textarea 
+                        name="address" 
+                        id="address"
+                        placeholder="e.g. 24F BGC CORPORATE CENTER, 30TH STREET CORNER 11TH AVENUE, BONIFACIO GLOBAL CITY, TAGUIG CITY, METRO MANILA"
+                        cols="30" 
+                        rows="3"
+                        style="width:99%"
+                    ></textarea>
+                </td>
+            </tr>
+
+        <!--Part 6. C. Radio Button -->
+            <tr>
+                <td style="background-color:rgb(221, 214, 214)">
+                    GENDER:
+                </td>
+
+                <td>
+                    <input 
+                        type="radio" 
+                        name="gender"
+                        id="male"
+                        value="MALE"
+                    />
+                    <label for="male">MALE</label>
+                </td>
+
+                <td>
+                    <input 
+                        type="radio" 
+                        name="gender"
+                        id="female"
+                        value="FEMALE"
+                    />
+                    <label for="female">FEMALE</label>
+                </td>
+            </tr>
+
+            <tr>
+                <th 
+                    colspan="9" 
+                    align="left" 
+                    style="background-color:rgb(109, 102, 102)"
+                ><em><font color="white">II. OTHER INFORMATION</font color></em></th>
+            </tr>
+
+        <!--Part 6. D. Input Selection Box --> 
+            <tr>
+                <td style="background-color:rgb(221, 214, 214)">
+                    <label for="dropdown">CAREER PATH FIELD:</label>
+                </td>
+                <td colspan="15">
+                    <select 
+                        name="dropdown" 
+                        id="dropdown"
+                        size="1"
+                        style="width:100%"
+                    >
+                        <option 
+                        selected
+                        disabled
+                        align="center"
+                        >
+                            Please Select
+                        </option>
+                        <option 
+                            value="fronEndDev"
+                            align="center"
+                        >Front-end Developer</option>
+                        <option 
+                            value="backEndDev"
+                            align="center"
+                        >Back-end Developer</option>
+                        <option 
+                            value="fullStackDev"
+                            align="center"
+                        >Full-stack Developer</option>
+                    </select>
+                </td>
+            </tr>
+        <!--Part 6. E. Checkbox --> 
+            <tr>
+                <td 
+                    rowspan="2" 
+                    style="background-color:rgb(221, 214, 214)"
+                >
+                    TECHNICAL SKILLS FIELD:
+                </td>
+            </tr>
+            <tr>
+                <td colspan="15" align="center">
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="html"
+                        value="HTML"
+                    />
+                    <label for="html">HTML</label>
+                    
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="css"
+                        value="CSS"
+                    />
+                    <label for="css">CSS</label>
+    
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="javascript"
+                        value="JavaScript"
+                    />
+                    <label for="javascript">JavaScript</label>
+        
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="mySQL"
+                        value="MySQL"
+                    />
+                    <label for="mySQL">MySQL</label>
+
+                    <br /><br />
+
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="php"
+                        value="Php"
+                    />
+                    <label for="php">PHP</label>
+
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="laravel"
+                        value="Laravel"
+                    />
+                    <label for="laravel">Laravel</label>
+
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="reactJS"
+                        value="React JS"
+                    />
+                    <label for="reactJS">React JS</label>
+                </td>
+            </tr>
+
+        <!--Part 6. F. Button Control to Submit -->     
+            <tr align="center">
+                <td colspan="15">
+                    <input 
+                        type="submit" 
+                        value="Submit"
+                        style="width:100%"
+                    >
+                </td>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    height: 10vh;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+/* sagarin ang buong page ng website (viewport-height or vh- for height) tapos vw naman 'yong width */
+main {
+    display: flex;
+    height: 80vh;
+}
+
+nav {
+    background-color: rgb(247, 209, 159);
+    width: 20%;
+    padding: 10px;
+}
+
+article {
+    background-color: rgb(247, 218, 181);
+    width: 60%;
+    padding: 10px;
+}
+aside {
+    background-color: rgb(248, 226, 197);
+    width: 20%;
+    padding: 10px;
+}
+
+body {
+    margin: 0px;
+}

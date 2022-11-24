@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    height: 10vh;
+    background-color: aliceblue;
+    padding: 15px;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+}
+
+nav,
+aside {
+    width: 20%;
+    padding: 15px;
+    background-color: rgb(193, 221, 247);
+}
+
+article {
+    width: 60%;
+    padding: 15px;
+    background-color: rgb(170, 210, 248);
+}
+
+.container {
+    display: flex;
+    column-gap: 30px;
+    /*
+    gap -shorthand ng column and row na gap
+    column-gap
+    row-gap
+    */
+}
+
+/* For the LEFT SIDE in the ARTICLE*/
+.flex-item.left {
+    width: 70%;
+}
+.flex-item.left .field {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.field label {
+    flex: 1;
+    /* 
+        flex-grow -property na nag-se-set sa item para mag-grow if may space pa.
+        flex-shrink -control para lumiit ang container if needed
+        flex-basis -default ng size ng element, or smallest size bago ibigay ang space sa iba.
+    */
+}
+
+.field input {
+    flex: 2;
+}
+
+/* For the RIGHT SIDE in the ARTICLE*/
+.flex-item.right {
+    width: 30%;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* [] is type attribute selector */
+input[type="submit"] {
+    border: 0;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+/* hover is pseudoclass */
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    
+    <!-- HTML Forms- used to collect some date from the site visitor <form></form> -->
+
+    <h1>HTML Forms</h1>
+
+    <br />
+
+    <!-- form action ginagamit kung may server na/ form tag parent ng form/paper na fi-fill-up-an -->
+
+    <form action="">
+        <!-- label for="" used to find kung saan dapat accompanied by id="" -->
+        <label for="firstName">First Name:</label>
+
+        <!-- Magiging blank box for text input="text" /> -->
+        <!-- bawal maglagay ng space sa forms/ multiple words for name/ use camel case (camelSpace) -->
+        <!-- maxlength for validation -->
+        <!-- placeholder parang label inside sa box like fb/ the grey color value that you can see -->
+        <input 
+            type="text"
+            name="firstName"
+            size="20"
+            maxlength="20"
+            minlength="5"
+            placeholder="First Name"
+            id="firstName"
+        />
+        <br /><br />
+
+        <label for="password">Password:</label>
+        <input 
+            type="password" 
+            name="password" 
+            id="password"
+            placeholder="Password"
+        />
+        <br /><br />
+
+        <label for="feedback">Feedback:</label>
+        <br />
+        <!-- sa text area <textarea> 'tong sa gitna dapat walang text or space para iwas problem </textarea> -->
+        <textarea 
+            name="feedback" 
+            id="feedback" 
+            cols="30" 
+            rows="10"
+            placeholder="Submit your Feedback!"
+        ></textarea>
+
+        <br /><br />
+
+        Programming languanges: <br />
+
+        <!-- name for checkbox must the same. Parang question siya for the checkbox -->
+        <label for="javascript">Javascript</label>
+        <input 
+            type="checkbox"
+            name="proglanguage"
+            id="javascript"
+            value="Javascript"
+        />
+
+        <label for="php">PHP</label>
+        <input 
+            type="checkbox" 
+            name="proglanguage" 
+            id="php"
+            value="PHP"
+        />
+
+        <label for="python">Python</label>
+        <input 
+            type="checkbox" 
+            name="proglanguage" 
+            id="python"
+            value="Python"
+        />
+
+        <br /><br />
+
+        <!-- HTML Radio Buttons -->
+
+        Enter your gender:
+        <br /><br />
+
+        <label for="male">Male</label>
+        <input 
+            type="radio" 
+            name="gender"
+            id="male"
+            value="male"
+        />
+
+        <label for="female">Female</label>
+        <input 
+            type="radio" 
+            name="gender"
+            id="female"
+            value="female"
+        />
+
+        <label for="dontSay">Prefer not to say</label>
+        <input 
+            type="radio" 
+            name="gender"
+            id="dontSay"
+            value="Prefer not to say"
+        />
+
+        <br /><br />
+
+        <!-- dropdown mag-choose nakalagay sa box tapos lilitaw sa box kung saan pipiliin na answer -->
+        <!-- size used kung ilan makikita sa box -->
+        <label for="dropdown">Web Technology:</label>
+        <select 
+            name="dropdown" 
+            id="dropdown"
+            size="1"
+        >
+            <option 
+                selected
+                disabled
+            >
+                Please Select
+            </option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+
+        </select>
+
+        <br /><br />
+
+        <!-- accept="image/*" -image file lang ang lalabas dapat (* in programming is wildcard) -->
+        Upload profile picture:
+        <input 
+            type="file" 
+            name="profilePicture" 
+            accept="image/*"
+        >
+
+        <br /><br />
+
+        Enter Birthday:
+        <input type="date" name="bday" />
+
+        <br /><br />
+
+        Range from 0 to 50
+        <input 
+            type="range" 
+            name="range" 
+            min="0"
+            max="50"
+            step="10"
+            value="0"
+        />
+        <br /><br />
+
+        Pick a time:
+        <input type="time" name="time">
+        <br /><br />
+
+        Pick a month:
+        <input type="month" name="month">
+        <br /><br />
+
+        Pick a week:
+        <input type="week" name="week">
+        <br /><br />
+
+        Pick a color:
+        <input 
+            type="color" 
+            name="color" 
+            value="#42C5FF"
+        >
+        <br /><br />
+
+        Enter a number:
+        <input 
+            type="number" 
+            name="number"
+            min="10"
+            max="99"
+        >
+        <br /><br />
+
+        <input type="button" value="Button 1">
+        <br /><br />
+
+        <input type="reset" value="Reset">
+        <br /><br />
+
+        <input type="submit" value="Register">
+        <br /><br /><br /><br />
+
+    </form>
+
+    <br />
+</body>
+</html>

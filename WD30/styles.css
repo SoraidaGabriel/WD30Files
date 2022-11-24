@@ -1,0 +1,29 @@
+/* . for class and # for id / Background example */
+
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://placeimg.com/640/480/tech);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.div2 {
+    width: 300px;
+    height: 300px;
+    border: 1px dashed cornflowerblue;
+}
+.div3 {
+    background-color: darkslategrey;
+}
+.div2.div3 {
+    color: aliceblue;
+}
+.div4 {
+    width: 250px;
+    height: 250px;
+    border: 1px double hotpink;
+    background-color: lightblue;
+}

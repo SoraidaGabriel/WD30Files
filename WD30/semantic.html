@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            background-color: rgb(252, 243, 230);
+            height: 200px;
+            border: 1px solid rgb(253, 249, 249);
+        }
+        nav {
+            background-color: rgb(255, 255, 255);
+            height: 50px;
+            border: 1px solid rgb(245, 233, 233)
+        }
+        article {
+            background-color: rgb(215, 252, 252);
+            width: 70%;
+            float: left;
+            height: 1300px;
+        }
+        aside {
+            background-color: rgb(255, 210, 217);
+            width: 30%;
+            float: left;
+            height: 1300px;
+        }
+        footer {
+            background-color: rgb(231, 228, 231);
+            height: 100px;
+            clear: both;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img 
+            src="https://i.pinimg.com/originals/25/77/51/2577515ff79320826dacfd418ae0a713.jpg" 
+            alt="Blackpink"
+        >
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+    </nav>
+
+    <!-- Isang beses lang gagamitin. Focus or main conent na pinapakita sa isang website or article/ Main focus ng website -->
+    <main>
+        <article>
+            <h2>All About Blackpink</h2>
+            <section>
+
+                <p align="justify">
+                    <em>"The meaning of <strong>BLACKPINK</strong> aims to contradict the common perception of the color pink,"</em> the statement read. <em>"<strong>Pink</strong> is commonly used to portray prettiness, but <strong>BLACKPINK</strong> actually means to say that <strong>'Pretty isn't everything.'</strong> It also symbolizes that they are a team that encompasses not only beauty, but also great talent."</em>
+                <br /><br />
+                    Between their debut in 2016 and the 2020 release of The Album, Blackpink released fewer than 22 songs, all singles. Despite the small discography, the group's glam look and fun choreography were quickly replicated by other K-pop groups and fans in their social media videos.
+                <br /><br />
+                    The biggest part of Blackpink's popularity lies in their songs, which talk about independence and vulnerability, bilingual lyrics, and undeniable stage presence. Blackpink is also known for the styling of their videos, otherwise referred to as 'concepts' for each song. Where some K-pop videos might have two or three concepts in their music videos, Blackpink will often have five or six completely different concepts (complete with different hair colors and clothing) featured in their video.
+                </p>
+            </section>
+
+            <section>
+                <figure>
+                    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/2/2022/09/16140721/BLACKPINK-1600x900.jpg" alt="Picture of Blackpink">
+                    <figcaption>BLACKPINK-SHUT DOWN POSTER PICTURE (Jisoo, Jennie, Lisa, Rosie)
+                    </figcaption>
+                </figure>
+
+            </section>
+                <br /><br />
+
+            <section>
+                <!-- <video src="./files_example_MP4_480_1_5MG.mp4">Blackpink Revolution</video> -->
+                <video controls autoplay muted loop>
+                    <source src="./files_example_MP4_480_1_5MG.mp4" 
+                    />
+                    Your browser does not support this video.
+                </video>
+            </section>
+
+            <section>
+                <audio controls>
+                    <source src="./files_example_MP3_1MG.mp3" /> Your browser does not support this audio.
+                </audio>
+            </section>
+        </article>
+        <aside>
+            <p><strong>BORN PINK TRACKLIST</strong></p>
+            <dl>
+                <ol>
+                    <li>Pink Venom</li>
+                    <li>Shut Down</li>
+                    <li>Typa Girl</li>
+                    <li>Yeah Yeah Yeah</li>
+                    <li>Hard to Love</li>
+                    <li>The Happiest Girl</li>
+                    <li>Tally</li>
+                    <li>Ready For Love</li>
+                </ol>
+            </dl>
+        </aside>
+    </main>
+        <footer>
+            <dl>
+                <dt><strong>Follow Blackpink:</strong>
+                    <dd>
+                        Youtube Channel:
+                        <a href="https://www.youtube.com/c/BLACKPINKOFFICIAL">BLACKPINK OFFICIAL</a>
+                        <br />
+                        Facebook Page:
+                        <a href="https://www.facebook.com/BLACKPINKOFFICIAL">BLACKPINK OFFICIAL</a> 
+                    </dd>
+                </dt>
+            </dl>
+             <p>
+                 &#169; FiloBlink GABRIEL 2022
+                 <br /><br />
+             </p>
+        </footer>
+</body>
+</html>

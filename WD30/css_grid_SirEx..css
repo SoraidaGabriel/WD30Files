@@ -1,0 +1,8 @@
+.parent {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    max-width: 800px;
+    margin: auto;
+    gap: 10px;
+}
+

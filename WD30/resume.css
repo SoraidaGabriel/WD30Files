@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(247, 173, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(247, 169, 169)
+}
+.container .leftSide {
+    position: relative;
+    background-color: indianred;
+    padding: 40px;
+}
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.profileText .img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.profileText .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2 {
+    color: aliceblue;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+.title {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: lightblue;
+}
+.contactInfo ul li span {
+    color: aliceblue;
+    font-weight: 300;
+}
+.contactInfo.education {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+    font-style: none;  
+}
+.contactInfo.education li h5 {
+    color: lightblue;
+    font-weight: 500;
+}
+.contactInfo.education li h4:nth-child(2) {
+    color: aliceblue;
+    font-weight: 600;
+}
+.contactInfo.education li h4 {
+    color: aliceblue;
+    font-weight: 300;
+}
+
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(10, 129, 129);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: cyan;
+}
+.contactInfo.language {
+    border-bottom: 1px solid black;
+}
+
+.contactInfo.management li {
+    margin-bottom: 15px;
+    font-style: none;  
+}
+
+/* Another Side */
+
+.container .rightSide {
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+.about:last-child {
+    margin-bottom: 0;
+}
+.title2 {
+    color: indianred;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p {
+    color: black;
+    text-align: justify;
+}
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .yearCompany {
+    min-width: 150px;
+}
+.about .box .yearCompany h5 {
+    text-transform: uppercase;
+    color: indianred;
+    font-size: 16px;
+    font-weight: 600;
+}
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: indianred;
+    font-size: 18px;
+    font-weight: 600px;
+}
+.about .box .text li {
+    position: relative;
+    margin: 10px 0;
+    text-align: justify; 
+}
+
+/* Professional Skills */
+
+.aboutSkills .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.aboutSkills .box .yearSkill {
+    min-width: 150px;
+}
+.aboutSkills .box .yearSkill h5 {
+    text-transform: uppercase;
+    color: indianred;
+    font-size: 16px;
+    font-weight: 600;
+}
+.aboutSkills .box .text h4 {
+    text-transform: uppercase;
+    color: indianred;
+    font-size: 18px;
+    font-weight: 600px;
+}
+.aboutSkills .box .text li {
+    position: relative;
+    margin: 10px 0; 
+    text-align: justify;
+}
+
+
+
+

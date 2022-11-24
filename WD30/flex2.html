@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Example</title>
+    <link rel="stylesheet" href="./flex2.css">
+</head>
+<body>
+
+    <header>
+        Header
+    </header>
+    
+    <main>
+        <nav>Navigation</nav>
+
+        <article>
+
+            <form>
+                <div class="container">
+                    <div class="flex-item left">
+
+                        <div class="field">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Lalisa">
+                        </div>
+
+                        <div class="field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Kim">
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="lalisa_manoban@kim.yg">
+                        </div>
+                    </div>
+                    <div class="flex-item right">
+                        Proficiency: <br />
+                        <input type="checkbox" name="prof" id="html">
+                        <label for="html">HTML</label>
+                        <br />
+                        <input type="checkbox" name="prof" id="css">
+                        <label for="css">CSS</label>
+                        <br />
+                        <input type="checkbox" name="prof" id="javascript">
+                        <label for="javascript">JavaScript</label>
+                        <br />
+                     </div>
+                </div>
+
+                <div class="btn-container">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+
+        </article>
+
+        <aside>Aside</aside>
+    </main>
+
+    <footer>Footer</footer>
+</body>
+</html>

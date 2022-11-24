@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    
+    <form>
+        <table>
+            <!--Part 6. A. Input Text -->
+            <tr>
+                <td>
+                    <label for="firstName">First Name: </label>
+                    <td>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    </td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="middleName">Middle Name: </label>
+                </td>
+                <td>
+                    <input type="text" name="middleName" id="middleName" placeholder="Middle Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="lastName">Last Name: </label>
+                </td>
+                <td>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                </td>
+            </tr>
+
+        <!--Part 6. B. Input Textarea -->
+            <tr>
+                <td>
+                    <label for="address">Address:</label>
+                </td>
+                <td>
+                    <textarea 
+                        name="address" 
+                        id="address"
+                        placeholder="Write your address here." 
+                        cols="30" 
+                        rows="5"
+                        style="width:58%"
+                    ></textarea>
+                </td>
+            </tr>
+        <!--Part 6. C. Radio Button -->
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input 
+                        type="radio" 
+                        name="gender"
+                        id="male"
+                        value="male"
+                    />
+                    <label for="male">Male</label>
+                
+                    <input 
+                        type="radio" 
+                        name="gender"
+                        id="female"
+                        value="female"
+                    />
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+        <!--Part 6. D. Input Selection Box -->    
+            <tr>
+                <td>
+                    <label for="dropdown" colspan="2">Career Path Feild:</label>
+                </td>
+                <td>
+                    <select 
+                        name="dropdown" 
+                        id="dropdown"
+                        size="1"
+                    >
+                    <option 
+                        selected
+                        disabled
+                    >
+                        Please Select
+                    </option>
+                    <option value="fronEndDev">Front-end Developer</option>
+                    <option value="backEndDev">Back-end Developer</option>
+                    <option value="fullStackDev">Full-stack Developer</option>
+                    </select>
+                    </td>
+            </tr>
+        
+        <!--Part 6. E. Checkbox --> 
+            <tr>
+                <td colspan="3">Technical Skills Field:</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="html"
+                        value="HTML"
+                    />
+                    <label for="html">HTML</label>
+                
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="css"
+                        value="CSS"
+                    />
+                    <label for="css">CSS</label>
+
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="javascript"
+                        value="JavaScript"
+                    />
+                    <label for="javascript">JavaScript</label>
+
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="mySQL"
+                        value="MySQL"
+                    />
+                    <label for="mySQL">MySQL</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="php"
+                        value="Php"
+                    />
+                    <label for="php">PHP</label>
+
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="laravel"
+                        value="Laravel"
+                    />
+                    <label for="laravel">Laravel</label>
+        
+                    <input 
+                        type="checkbox"
+                        name="techSkillsField"
+                        id="reactJS"
+                        value="React JS"
+                    />
+                    <label for="reactJS">React JS</label>
+                </td>
+            </tr>
+
+        <!--Part 6. F. Button Control to Submit -->     
+
+            <tr align="center">
+                <td colspan="2">
+                    <input 
+                        type="submit" 
+                        value="Submit" 
+                        style="width:100%"
+                    />
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

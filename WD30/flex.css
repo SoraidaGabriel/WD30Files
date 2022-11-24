@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-row {
+    display: flex;
+    /* 'yong row magkakatabi na sa isang line pagilid hindi pababa*/
+    flex-direction: row;
+    /* auto adjust ang flex-wrap kung hindi magkasiya sa naka-set na value ng height and width */
+    flex-wrap: wrap;
+    border: 2px solid darkgrey;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-column {
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid darkgrey;
+    margin-top: 100px;
+    height: 200px;
+    justify-content:center;
+    align-content: center;
+}
+
+.box {
+    width: 200px;
+    font-size: 32px;
+    padding: 20px;
+}
+
+.box1 {
+    background-color: indianred;
+    order: 6;
+}
+.box2 {
+    background-color: rgb(206, 106, 106);
+}
+.box3 {
+    background-color: rgb(206, 120, 120);
+}
+.box4 {
+    background-color: rgb(206, 130, 130);
+}
+.box5 {
+    background-color: rgb(207, 142, 142);
+}
+.box6 {
+    background-color: rgb(207, 154, 154);
+}
